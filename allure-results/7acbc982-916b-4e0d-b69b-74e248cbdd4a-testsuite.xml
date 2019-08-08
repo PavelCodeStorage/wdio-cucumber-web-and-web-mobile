@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1565211046708' stop='1565211053764'>
+    <name>Add Item to the Cart: User can add selected product(s) to the Cart</name>
+    <title>Add Item to the Cart: User can add selected product(s) to the Cart</title>
+    <test-cases>
+        <test-case start='1565211046712' status='broken' stop='1565211053762'>
+            <name>Given User performed searchings of "Cucumber" item for "All" department</name>
+            <title>Given User performed searchings of "Cucumber" item for "All" department</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1565211046724' status='passed' stop='1565211053415'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='84607d4e-59a9-4451-bec3-2c19e90dd715-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1565211053416' status='broken' stop='1565211053762'>
+                    <name>POST /session/:sessionId/element/element/click</name>
+                    <title>POST /session/:sessionId/element/element/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>stale element reference: element is not attached to the page document
+                  (Session info: chrome=65.0.3325.181)
+                  (Driver info: chromedriver=2.38.551591 (bcc4a2cdef0f6b942b2bb8049068f65340fa2a69),platform=Linux 4.9.125-linuxkit x86_64)</message>
+                <stack-trace>stale element reference: stale element reference: element is not attached to the page document
+                  (Session info: chrome=65.0.3325.181)
+                  (Driver info: chromedriver=2.38.551591 (bcc4a2cdef0f6b942b2bb8049068f65340fa2a69),platform=Linux 4.9.125-linuxkit x86_64)
+                    at getErrorFromResponseBody (/Users/pavel/Desktop/webdriverio-tests/node_modules/webdriver/build/utils.js:215:10)
+                    at Request._callback (/Users/pavel/Desktop/webdriverio-tests/node_modules/webdriver/build/request.js:103:64)
+                    at Request.self.callback (/Users/pavel/Desktop/webdriverio-tests/node_modules/request/request.js:185:22)
+                    at Request.&lt;anonymous> (/Users/pavel/Desktop/webdriverio-tests/node_modules/request/request.js:1161:10)
+                    at IncomingMessage.&lt;anonymous> (/Users/pavel/Desktop/webdriverio-tests/node_modules/request/request.js:1083:12)
+                    at endReadableNT (_stream_readable.js:1145:12)
+                    at World.Given (/Users/pavel/Desktop/webdriverio-tests/src/feature/step_definition/my_steps.js:30:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
