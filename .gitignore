@@ -1,0 +1,18 @@
+### IntelliJ ###
+.idea/
+
+### Visual Studio code ###
+.vscode/
+
+### Logs ###
+allure-results/
+allure-report/
+
+### Node ###
+node_modules/
+
+### MACOS ###
+.DS_Store
+
+### CUSTOM ###
+package-lock.json
