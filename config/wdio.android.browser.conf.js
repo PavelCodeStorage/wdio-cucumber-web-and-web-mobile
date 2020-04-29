@@ -1,6 +1,6 @@
 const { config } = require('./wdio.shared.conf')
 
-config.specs = ['./src/features/web/*.feature']
+config.specs = ['./src/features/*.feature']
 
 config.port = 4723
 config.appium = {
